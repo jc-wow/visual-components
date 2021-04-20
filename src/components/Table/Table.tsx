@@ -18,14 +18,9 @@ export const Table: React.FC = () => {
     const tableBody: any[] = [];
     const rows: number = Object.keys(testData[0]).length;
     for (let j = 0; j < rows - 1; j++) {
-				
         for (let i = 0; i < dataLength; i++) {
-					tableBody.push(
-						<div className={'table-row' + j}>
-
-						</div>
-					)
-				}
+            tableBody.push(<div className={'table-row' + j}></div>);
+        }
     }
 
     return (
